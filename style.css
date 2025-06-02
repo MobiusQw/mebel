@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: lowercase;
+  color: #222;
+}
+
+.logo span {
+  display: block;
+  font-size: 10px;
+  font-weight: normal;
+  color: #888;
+  letter-spacing: 2px;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav a.active {
+  color: #ffc107;
+}
+
+.nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffc107;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.phone-btn {
+  background: #ffc107;
+  color: #222;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.lang-switcher {
+  position: relative;
+}
+
+.lang-switcher span {
+  margin-right: 5px;
+}
+
+.lang-switcher select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
