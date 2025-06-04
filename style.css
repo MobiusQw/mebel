@@ -66,7 +66,6 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* Только цвет у активной ссылки */
 nav a.active {
   color: #ffc107;
 }
@@ -101,4 +100,55 @@ nav a.active {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 5px;
+}
+
+
+
+
+
+
+
+.features {
+  position: relative;
+  background: url('women.png') no-repeat center center fixed;
+  background-size: cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.features h3 {
+  font-size: 48px;
+  font-weight: 800;
+  font-family: 'Georgia', serif;
+  margin: 40px;
+}
+
+.features h2{
+  font-size: 20px;
+  margin: 30px;
+}
+
+.features p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.block img{
+  position: relative;
+  bottom: 10px ;
+}
+
+.block {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  padding-left: 800px;
 }
